@@ -19,6 +19,7 @@ function timer(seconds) {
   if (secondsLeft === 0) {
     end.currentTime = 0;
     end.play();
+    endTime.textContent = ``;
   }  
   if (secondsLeft < 0) {
     clearInterval(countdown);
